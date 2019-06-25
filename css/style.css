@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../img/back.png");
+    background-size: cover;
+
+}
+
+#position {
+        position: relative;
+    width:798px;
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+
+}
+#content {
+    background: rgba(15,23,50,0.69);
+    padding: 23px 75px 75px 75px;
+    position: relative;
+    z-index: 5;
+
+}
+
+
+p {
+    font-size: 15px;
+    font-family: 'Handlee', cursive;
+    color:#ffffff;
+    font-weight: lighter;
+
+}
+h1{
+    font-size: 32px;
+    font-family: 'Kaushan Script', cursive;
+    color:#ffffff;
+    margin-bottom: 40px;
+    margin-top: 20px;
+;
+
+}
+#pic {
+    margin-top: 200px;
+    font-size: 50px;
+    text-align: center;
+}
+#obl1 {
+    position: absolute;
+    left: -180px;
+    top: 170px;
+    z-index: 1;
+    animation: obl1 20s ease-in-out infinite;
+
+}
+@keyframes obl1 {
+     50%{
+         left:200px;
+     }
+     50% {
+         right: 300px;
+     }
+ }
+#obl2 {
+    position: absolute;
+    left: 80px;
+    top: 285px;
+    z-index: 1;
+    animation: obl2 15s ease-in-out infinite;
+}
+@keyframes obl2 {
+    50%{
+        right:500px;
+    }
+    50% {
+        left: 400px;
+    }
+}
+#obl4 {
+    position: absolute;
+    top: -69px;
+    right: -135px;
+
+    z-index: 7;
+}
+#obl3 {
+    position: absolute;
+    left: 500px;
+    top: 280px;
+    z-index: 1;
+    animation: obl3 20s ease-in-out infinite;
+}
+@keyframes obl3 {
+    25%{
+        left:50px;
+    }
+    75% {
+        right: 200px;
+    }
+}
+#grass {
+    background: url("../img/grass.png");
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 100px;
+
+}
+#links a img {
+    display: block;
+}
+#links{
+    position: fixed;
+    z-index: 5;
+    margin-left: -40px;
+}
+@keyframes zoomInRight {
+    from,
+    50%,
+    to {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.zoomInRight {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+}
